@@ -53,6 +53,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
 }
 
 /*Navbar*/
@@ -112,7 +113,7 @@ footer {
     cursor: pointer;
 }
 /*Card*/
-.container-desktop{
+.container{
     display: grid;
     height: 50vh;
     width: 70vw;
@@ -135,7 +136,8 @@ footer {
     align-items: center;
     height: 50vh;
     width: 66vw;
-    border: solid 1px black;
+    border: solid 1px #e2e2e2;
+    border-radius: 5px;
     font-size: 1.5rem;
     font-weight: 500;
 }
@@ -149,17 +151,20 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center ;
+    align-items: center;
     flex: 1 0 0%
 }
 
 .card-text button {
     margin-top: 0.5rem;
     height: 2.5rem;
+    width: 90%;
     border-radius: 5px;
     font-size: 1.5rem;
     font-weight: 500;
     background-color: #00579c;
     color: white;
+    margin-bottom: 1rem;
 }
 
 .card-text button:hover{
@@ -273,7 +278,7 @@ footer p{
         display: none;
     }
     
-    .container-desktop{
+    .container{
         display: grid;
         height: 60vh;
         width: 70vw;
@@ -291,12 +296,11 @@ footer p{
     .card-body{
         margin: 1rem;
         width: 30vw;
-        height: 60%;
+        height: 50%;
     }
 
     .card-body img{
         width: 100%;
-        height: 60%;
     }
 
     /*Filter*/
@@ -364,9 +368,10 @@ footer p{
         display: none;
     }
 
-    .container-desktop{
+    .container{
         display: grid;
-        height: 70vh;
+        height: 80%;
+        width: 90%;
         grid-template-columns: repeat(4,1fr);
         grid-auto-flow: unset;
         gap: 20px;
@@ -378,11 +383,10 @@ footer p{
     /*Card*/
     .card-body{
         width: 100%;
-        height: 36vh;
+        height: 100%;
     }
     .card-body img{
         width: 100%;
-        height: 60%;
     }
 
     /*Footer*/
